@@ -3,10 +3,14 @@ import {View,Text, StyleSheet,Image} from "react-native"
 
 const Imagecom =()=>{
 
-return <View>
+return <View style={styles.listStyle}>
 
-<Text>Hello world</Text>
+<Text style={styles.textStyle} >this is image file</Text>
 
+<Image 
+
+style ={styles.imageStyle}
+source={require("../../../assets/pics.jpg")}/>
 
 </View>
 
@@ -15,11 +19,30 @@ return <View>
 
 const styles =StyleSheet.create({
 
+    listStyle:{
+
+        height:500,
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center"
+    },
+
+
     textStyle:{
 
    fontSize:30,
+   textAlign:"center",
+   marginTop:40
+   
+
+    },
+    imageStyle:{
+
+  width:300,
+  height:300,
 
     }
+
 
 
 })
